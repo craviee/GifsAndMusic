@@ -11,6 +11,11 @@ function changeImg(value)
         back.disabled = false;
         next.disabled = true;
     }
+    else
+    {
+        back.disabled = false;
+        next.disabled = false;
+    }
 
     video.src = links[index];
     body.backgroundImage = 'url(./img/' + imgs[index] +')';
@@ -30,6 +35,7 @@ var links =
 [
     "https://www.youtube.com/embed/o3hEYqIOfrU?autoplay=1&rel=0",
     "https://www.youtube.com/embed/GlUeW7IOSFc?autoplay=1&rel=0"
+
 ];
 
 var imgs =
