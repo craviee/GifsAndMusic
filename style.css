@@ -1,0 +1,11 @@
+body{
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+}
+
+#video{
+  position:relative;
+  width:267px;
+  height:25px;
+  display: none;
+}
