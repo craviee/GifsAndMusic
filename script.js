@@ -1,43 +1,42 @@
-var body = document.getElementsByTagName('body')[0];
-body.style.backgroundImage = 'url(./img/1.gif)';
+function changeImg(value)
+{
+    index += value;
+    if (index === 0)
+    {
+        back.disabled = true;
+        next.disabled = false;
+    }
+    else if (index === links.length - 1)
+    {
+        back.disabled = false;
+        next.disabled = true;
+    }
 
-// var vid = "o3hEYqIOfrU",
-//   audio_streams = {};
-//
-// // $.get('https://cors-anywhere.herokuapp.com/https://www.youtube.com/get_video_info?video_id=' + vid, function(data) {
-// //   var data = parse_str(data),
-// //     streams = (data.url_encoded_fmt_stream_map + ',' + data.adaptive_fmts).split(',');
-// //   console.log(streams);
-// //   $.each(streams, function(n, s) {
-// //     var stream = parse_str(s),
-// //       itag = stream.itag * 1,
-// //       quality = false;
-// //     console.log(stream);
-// //     switch (itag) {
-// //       case 139:
-// //         quality = "48kbps";
-// //         break;
-// //       case 140:
-// //         quality = "128kbps";
-// //         break;
-// //       case 141:
-// //         quality = "256kbps";
-// //         break;
-// //     }
-// //     if (quality) audio_streams[quality] = stream.url;
-// //   });
-// //   console.log(audio_streams);
-// //   $("#youtube").attr({
-// //     src: audio_streams['128kbps']
-// //   });
-// // });
-// //
-// // function parse_str(str) {
-// //   return str.split('&').reduce(function(params, param) {
-// //     var paramSplit = param.split('=').map(function(value) {
-// //       return decodeURIComponent(value.replace('+', ' '));
-// //     });
-// //     params[paramSplit[0]] = paramSplit[1];
-// //     return params;
-// //   }, {});
-// // }
+    video.src = links[index];
+    body.backgroundImage = 'url(./img/' + imgs[index] +')';
+}
+
+let body = document.getElementsByTagName('body')[0].style;
+let back = document.getElementById("go-back");
+let next = document.getElementById("go-next");
+let video = document.getElementById('video');
+
+body.backgroundImage = 'url(./img/1.gif)';
+back.disabled = true;
+
+var index = 0;
+
+var links =
+[
+    "https://www.youtube.com/embed/o3hEYqIOfrU?autoplay=1&rel=0",
+    "https://www.youtube.com/embed/GlUeW7IOSFc?autoplay=1&rel=0"
+];
+
+var imgs =
+[
+    "1.gif",
+    "2.gif"
+];
+
+back.addEventListener('click', function(e) {changeImg(-1)});
+next.addEventListener('click', function(e) {changeImg(1)});

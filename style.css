@@ -1,9 +1,10 @@
-body{
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
+body
+{
+  background-color: DarkCyan;
 }
 
-#video{
+#video
+{
   position:relative;
   width:267px;
   height:25px;
