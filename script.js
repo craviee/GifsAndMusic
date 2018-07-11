@@ -1,6 +1,7 @@
 function changeImg(value)
 {
     index += value;
+
     if (index === 0)
     {
         back.disabled = true;
@@ -26,23 +27,20 @@ let back = document.getElementById("go-back");
 let next = document.getElementById("go-next");
 let video = document.getElementById('video');
 
-body.backgroundImage = 'url(./img/1.gif)';
-back.disabled = true;
-
-var index = 0;
-
-var links =
+let index = 0;
+let imgs = [];
+let links =
 [
-    "https://www.youtube.com/embed/o3hEYqIOfrU?autoplay=1&rel=0",
-    "https://www.youtube.com/embed/GlUeW7IOSFc?autoplay=1&rel=0"
-
+    "o3hEYqIOfrU",
+    "GlUeW7IOSFc",
+    "68ugkg9RePc"
 ];
 
-var imgs =
-[
-    "1.gif",
-    "2.gif"
-];
+for(let i = 0; i < links.length; i++)
+{
+    links[i] = "https://www.youtube.com/embed/" + links[i] + "?autoplay=1&rel=0";
+    imgs.push(i + ".gif");
+}
 
 back.addEventListener('click', function(e) {changeImg(-1)});
 next.addEventListener('click', function(e) {changeImg(1)});
