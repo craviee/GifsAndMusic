@@ -2,6 +2,8 @@
 
 Amazing combinations of Gifs and Musics.
 
-You can pull request new features.
+![Ranma 1/2 dance gif](https://github.com/craviee/GifsAndMusic/blob/master/img/0.gif)
 
-I don't know why I created this.
+You can **pull request** new **features and gif+music** combinations!
+
+_I don't know why I created this_.
