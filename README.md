@@ -13,7 +13,7 @@ You can **pull request** new **features and/or gif+music** combinations!
 git clone https://github.com/craviee/GifsAndMusic.git
 ```
 ```sh
-cd GifsAndMusic/
+cd GifsAndMusic/html/
 ```
 ```sh
 yourbrowser home.html
