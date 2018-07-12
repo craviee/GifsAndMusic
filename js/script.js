@@ -19,7 +19,7 @@ function changeImg(value)
     }
 
     video.src = links[index];
-    body.backgroundImage = 'url(./img/' + imgs[index] +')';
+    body.backgroundImage = 'url(../img/' + imgs[index] +')';
 }
 
 let body = document.getElementsByTagName('body')[0].style;
