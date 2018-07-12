@@ -20,7 +20,7 @@ yourbrowser home.html
 ```
 ### Online
 
- You can test online at [this](http://gifsandmusic.herokuapp.com/) official deploy
+ You can test online at [this](http://gifsandmusic.herokuapp.com/) official deploy.
 
 
 _I don't know why I created this_.
