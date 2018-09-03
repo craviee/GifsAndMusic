@@ -27,14 +27,6 @@ yourbrowser home.html
  ### "Formal" documentation
 
   You can read the "formal" documentation [here](https://github.com/craviee/GifsAndMusic/blob/master/documentation/main.pdf).
- 
- ### Slides
-
-  I'm working on it.
-  
- ### Youtube Video
- 
-  I'm working on it either.
 
 ## License
 
