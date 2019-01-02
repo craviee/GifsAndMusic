@@ -13,7 +13,8 @@ let links =
 [
     "o3hEYqIOfrU",
     "GlUeW7IOSFc",
-    "68ugkg9RePc"
+    "68ugkg9RePc",
+    "kuNixp-wvWM"
 ];
 
 back.addEventListener('click', function(e) {changeGifAndMusic(-1)});
