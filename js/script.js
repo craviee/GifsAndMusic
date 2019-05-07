@@ -14,7 +14,8 @@ let links =
     "o3hEYqIOfrU",
     "GlUeW7IOSFc",
     "68ugkg9RePc",
-    "kuNixp-wvWM"
+    "kuNixp-wvWM",
+    "QodurMPEzPE"
 ];
 
 back.addEventListener('click', function(e) {changeGifAndMusic(-1)});
